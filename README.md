@@ -2,6 +2,7 @@
 
 ## Assignment
 Write ToDo app in React\
+Include routering.\
 Use: Redux toolkit, Material-ui, Axios libraries\
 Pull pokemon from : https://pokeapi.co/
 
@@ -29,7 +30,7 @@ Redux toolkit:Provider\
 Axios: axios.get
 
 ### Things to improve
-play more with css
-add better error handling in buttons and inputs
-better implementation of redux toolkit lib
+play more with css\
+add better error handling in buttons and inputs\
+better implementation of redux toolkit lib\
 add hook to remember input before submit(in case of refresh)
