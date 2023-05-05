@@ -27,3 +27,7 @@ install other deprecated libraries if needed
 Material-ui: icons, textfield, buttons\
 Redux toolkit:\
 Axios: axios.get
+
+### Things to improve
+play more with css
+add better error handling in buttons and inputs

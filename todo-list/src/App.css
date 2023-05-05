@@ -14,6 +14,7 @@ body {
 
 .App {
   text-align: center;
+  padding: 4rem;
 }
 
 h1 {
@@ -76,4 +77,97 @@ h1 {
 .completed {
   color: black;
   text-decoration: line-through;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.pokemon-container {
+  background: white;
+  margin-top: 5rem;
+  padding: 2rem;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pokemon-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pokemon-info img {
+  width: 300px;
+  height: 300px;
+  margin-bottom: 1rem;
+}
+
+.details {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.details h2 {
+  color: black;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.details p {
+  color: black;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.pokemon-moves {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.pokemon-moves h3 {
+  color: black;
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+}
+
+.pokemon-moves ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.pokemon-moves li {
+  background: red;
+  color: black;
+  padding: 0.5rem 1rem;
+  margin: 0.5rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.pokemon-moves li:hover {
+  background: black;
+  color: white;
+}
+
+.load-more {
+  margin-top: 2rem;
+  background: red;
+  color: black;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.load-more:hover {
+  background: black;
+  color: white;
 }
