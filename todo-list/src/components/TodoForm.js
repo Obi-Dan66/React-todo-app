@@ -32,3 +32,4 @@ export const TodoForm = ({addTodo}) => {
     </form>
     )
 }
+export default TodoForm;
