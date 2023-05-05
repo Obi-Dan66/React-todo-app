@@ -1,11 +1,24 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Todo } from "./Todo";
 import { TodoForm } from "./TodoForm";
 import { v4 as uuidv4 } from "uuid";
 import { EditTodoForm } from "./EditTodoForm";
 
+const LOCAL_STORAGE_KEY = "todos";
+
 export const TodoWrapper = () => {
-    const [todos, setTodos] = useState([]);
+    const [todos, setTodos] = useState(() => {
+        const savedTodos = localStorage.getItem("todos");
+        if (savedTodos) {
+            return JSON.parse(savedTodos);
+        } else {
+            return [];
+        }
+    });
+
+    useEffect(() => {
+        localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(todos));
+    }, [todos]);
 
     const addTodo = (todo) => {
         setTodos([
@@ -47,7 +60,7 @@ export const TodoWrapper = () => {
             {/* display todos */}
             {todos.map((todo) =>
                 todo.isEditing ? (
-                    <EditTodoForm editTodo={editTask} task={todo} />
+                    <EditTodoForm key={todo.id} editTodo={editTask} task={todo} />
                 ) : (
                     <Todo
                         key={todo.id}

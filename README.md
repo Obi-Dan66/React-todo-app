@@ -16,6 +16,7 @@ npm install @mui/material @emotion/react @emotion/styled\
 npm install @mui/icons-material
 npm install npm install @reduxjs/toolkit\
 npm install axios\
+npm install uuid //lib for better task handling(id)\
 npm start // start on default localhost port 3000
 
 install other deprecated libraries if needed
