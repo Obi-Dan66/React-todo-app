@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 
-const FetchAnything = () => {
+const FetchAllData = () => {
   const [data, setData] = useState({});
   const [input, setInput] = useState("");
   const [isLoading, setIsLoading] = useState(false);
@@ -54,7 +54,7 @@ const FetchAnything = () => {
     <div>
       <form onSubmit={handleSubmit}>
         <label>
-          Search for a Pokemon:
+          Search for a Pokemon by name:
           <input type="text" value={input} onChange={handleInputChange} />
         </label>
         <button type="submit">Search</button>
@@ -77,7 +77,7 @@ const FetchAnything = () => {
             <h3>Moves:</h3>
             <ul>
               {data.moves.slice(0, 5).map((move) => (
-                <li key={move.move.name}>{move.move.name}</li>
+                <div key={move.move.name}>{move.move.name}</div>
               ))}
             </ul>
           </div>
@@ -87,9 +87,9 @@ const FetchAnything = () => {
           <p>Search for a Pokemon above to see its details</p>
           <ul>
             {pokemonList.map((pokemon) => (
-              <li key={pokemon.name}>
+              <div key={pokemon.name}>
                 <button>{pokemon.name}</button>
-              </li>
+              </div>
             ))}
           </ul>
           {pokemonList.length === 0 && <p>No results found.</p>}
@@ -100,4 +100,4 @@ const FetchAnything = () => {
   );
 };
 
-export default FetchAnything;
+export default FetchAllData;

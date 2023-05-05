@@ -2,7 +2,7 @@ import React from "react";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Pokemon from "./pages/pokemon";
 import Home from "./pages/home";
-import FetchAnything from "./pages/fetcher";
+import FetchAllData from "./pages/fetcher";
 import './App.css';
 
 function App() {
@@ -17,7 +17,7 @@ function App() {
         <nav>
           <ul>
             <div>
-              <Link to="/">Homepage</Link>
+              <Link to="/">Todo App</Link>
               <div>
               </div>
               <Link to="/pokemon">Pokemon Lucky Search</Link>
@@ -30,7 +30,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/pokemon" element={<Pokemon />} />
-          <Route path="/fetch" element={<FetchAnything />} />
+          <Route path="/fetch" element={<FetchAllData />} />
         </Routes>
       </div>
     </Router>

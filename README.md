@@ -25,9 +25,11 @@ install other deprecated libraries if needed
 ### Assigned Lib usage
 
 Material-ui: icons, textfield, buttons\
-Redux toolkit:\
+Redux toolkit:Provider\
 Axios: axios.get
 
 ### Things to improve
 play more with css
 add better error handling in buttons and inputs
+better implementation of redux toolkit lib
+add hook to remember input before submit(in case of refresh)
