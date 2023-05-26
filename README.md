@@ -23,9 +23,3 @@ npm install uuid //lib for better task handling(id)\
 npm start // start on default localhost port 3000
 
 install other deprecated libraries if needed
-
-### Things to improve
-play more with css\
-add better error handling in buttons and inputs\
-better implementation of redux toolkit lib\
-add hook to remember input before submit(in case of refresh)
