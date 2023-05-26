@@ -1,4 +1,4 @@
-# React todo app - 1.webIT
+# React todo app and pokemon search
 
 ## Assignment
 Write ToDo app in React\
@@ -23,12 +23,6 @@ npm install uuid //lib for better task handling(id)\
 npm start // start on default localhost port 3000
 
 install other deprecated libraries if needed
-
-### Assigned Lib usage
-
-Material-ui: icons, textfield, buttons\
-Redux toolkit:Provider\
-Axios: axios.get
 
 ### Things to improve
 play more with css\

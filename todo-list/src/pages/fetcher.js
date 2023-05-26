@@ -88,7 +88,7 @@ const FetchAllData = () => {
           <ul>
             {pokemonList.map((pokemon) => (
               <div key={pokemon.name}>
-                <button>{pokemon.name}</button>
+                <p>{pokemon.name}</p>
               </div>
             ))}
           </ul>
